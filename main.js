@@ -8,5 +8,6 @@ const app = new Vue({
     product: 'Socks',
     description:
       'These Fluffy socks will keep your toes snug and warm all winter long!',
+    image: './vmSocks-green-onWhite.jpg',
   },
 });
