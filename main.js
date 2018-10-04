@@ -11,6 +11,6 @@ const app = new Vue({
     image: './vmSocks-green-onWhite.jpg',
     link: 'https://johnscrazysocks.com/collections/fun-and-funny-socks',
     altText: 'A pair of socks',
-    inStock: true,
+    inventory: 100,
   },
 });
