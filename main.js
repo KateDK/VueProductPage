@@ -10,5 +10,6 @@ const app = new Vue({
       'These Fluffy socks will keep your toes snug and warm all winter long!',
     image: './vmSocks-green-onWhite.jpg',
     link: 'https://johnscrazysocks.com/collections/fun-and-funny-socks',
+    altText: 'A pair of socks',
   },
 });
