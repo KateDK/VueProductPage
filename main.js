@@ -12,5 +12,6 @@ const app = new Vue({
     link: 'https://johnscrazysocks.com/collections/fun-and-funny-socks',
     altText: 'A pair of socks',
     inventory: 100,
+    onSale: false,
   },
 });
