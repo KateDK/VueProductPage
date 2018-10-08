@@ -24,6 +24,10 @@
         <p v-else>Out Of Stock</p>
         <p v-show="onSale">On Sale!</p>
 
+        <ul>
+          <li v-for="detail in details">{{detail}}</li>
+        </ul>
+
         <a :href=link target="_blank">See more cool socks</a>
       </div>
 

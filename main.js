@@ -11,6 +11,7 @@ const app = new Vue({
     image: './vmSocks-green-onWhite.jpg',
     link: 'https://johnscrazysocks.com/collections/fun-and-funny-socks',
     altText: 'A pair of socks',
+    details: ['80% Cotton', '20% Polyester', 'Gender-neutral'],
     inventory: 100,
     onSale: false,
   },
