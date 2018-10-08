@@ -16,6 +16,7 @@ const app = new Vue({
       { variantId: 5623, variantColor: 'Green' },
       { variantId: 2354, variantColor: 'Blue' },
     ],
+    sizes: [32, 35, 37, 40, 45],
     inventory: 100,
     onSale: false,
   },
