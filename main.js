@@ -12,6 +12,10 @@ const app = new Vue({
     link: 'https://johnscrazysocks.com/collections/fun-and-funny-socks',
     altText: 'A pair of socks',
     details: ['80% Cotton', '20% Polyester', 'Gender-neutral'],
+    variants: [
+      { variantId: 5623, variantColor: 'Green' },
+      { variantId: 2354, variantColor: 'Blue' },
+    ],
     inventory: 100,
     onSale: false,
   },

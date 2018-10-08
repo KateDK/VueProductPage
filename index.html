@@ -28,6 +28,10 @@
           <li v-for="detail in details">{{detail}}</li>
         </ul>
 
+        <div v-for="variant in variants" :key="variant.variantId">
+          <p>{{variant.variantColor}}</p>
+        </div>
+
         <a :href=link target="_blank">See more cool socks</a>
       </div>
 
