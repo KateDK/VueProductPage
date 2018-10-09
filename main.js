@@ -19,5 +19,6 @@ const app = new Vue({
     sizes: [32, 35, 37, 40, 45],
     inventory: 100,
     onSale: false,
+    cart: 0,
   },
 });
