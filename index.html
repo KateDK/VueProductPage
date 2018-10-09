@@ -40,9 +40,14 @@
         </div> -->
 
         <!-- <a :href=link target="_blank">See more cool socks</a> -->
-        <button @click="addToCart">Add to Cart</button>
-        <div class="cart">
-          <p>Cart({{cart}})</p>
+        <div>
+          <button @click="addToCart">Add to Cart</button>
+          <div class="cart">
+            <p>Cart({{cart}})</p>
+          </div>
+        </div>
+        <div>
+          <button v-if="cart > 0">Remove from Cart</button>
         </div>
       </div>
 
