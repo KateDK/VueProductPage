@@ -21,7 +21,7 @@ const app = new Vue({
       {
         variantId: 2354,
         variantColor: 'Blue',
-        variantImage: './VMSocks-Blue.jpg',
+        variantImage: './VMSocks-Blue.jpeg',
       },
     ],
     sizes: [32, 35, 37, 40, 45],
@@ -32,6 +32,9 @@ const app = new Vue({
   methods: {
     addToCart: function() {
       this.cart += 1;
+    },
+    updateProduct: function(variantImage) {
+      this.image = variantImage;
     },
   },
 });
