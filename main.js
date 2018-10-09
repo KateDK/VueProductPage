@@ -13,8 +13,16 @@ const app = new Vue({
     altText: 'A pair of socks',
     details: ['80% Cotton', '20% Polyester', 'Gender-neutral'],
     variants: [
-      { variantId: 5623, variantColor: 'Green' },
-      { variantId: 2354, variantColor: 'Blue' },
+      {
+        variantId: 5623,
+        variantColor: 'Green',
+        variantImage: './vmSocks-green-onWhite.jpg',
+      },
+      {
+        variantId: 2354,
+        variantColor: 'Blue',
+        variantImage: './VMSocks-Blue.jpg',
+      },
     ],
     sizes: [32, 35, 37, 40, 45],
     inventory: 100,
