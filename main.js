@@ -5,6 +5,7 @@ const app = new Vue({
 
   //data is the data we are passing to the el above
   data: {
+    brand: 'Vue Mastery',
     product: 'Socks',
     description:
       'These Fluffy socks will keep your toes snug and warm all winter long!',
