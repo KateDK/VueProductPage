@@ -56,7 +56,9 @@ const app = new Vue({
       return this.variants[this.selectedVariant].variantQuantity;
     },
     onSaleMsg() {
-      return `${this.brand} ${this.product} are on sale!`;
+      if (this.onSale) {
+        return `${this.brand} ${this.product} are on sale!`;
+      }
     },
   },
 });
