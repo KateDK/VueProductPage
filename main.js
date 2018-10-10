@@ -30,7 +30,7 @@ const app = new Vue({
     ],
     sizes: [32, 35, 37, 40, 45],
     // inStock: true,
-    onSale: false,
+    onSale: true,
     cart: 0,
   },
   methods: {
@@ -54,6 +54,9 @@ const app = new Vue({
     },
     inStock() {
       return this.variants[this.selectedVariant].variantQuantity;
+    },
+    onSaleMsg() {
+      return `${this.brand} ${this.product} are on sale!`;
     },
   },
 });
