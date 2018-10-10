@@ -9,7 +9,8 @@ const app = new Vue({
     product: 'Socks',
     description:
       'These Fluffy socks will keep your toes snug and warm all winter long!',
-    image: './vmSocks-green-onWhite.jpg',
+    // image: './vmSocks-green-onWhite.jpg',
+    selectedVariant: 0,
     link: 'https://johnscrazysocks.com/collections/fun-and-funny-socks',
     altText: 'A pair of socks',
     details: ['80% Cotton', '20% Polyester', 'Gender-neutral'],
@@ -37,13 +38,17 @@ const app = new Vue({
     removeFromCart() {
       this.cart -= 1;
     },
-    updateProduct(variantImage) {
-      this.image = variantImage;
+    updateProduct(index) {
+      // this.image = variantImage;
+      this.selectedVariant = index;
     },
   },
   computed: {
     title() {
       return `${this.brand} ${this.product}`;
+    },
+    image() {
+      return this.variants[this.selectedVariant].variantImage;
     },
   },
 });
