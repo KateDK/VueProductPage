@@ -7,6 +7,7 @@ Vue.component('product', {
   </div>
 
   <div class="product-info">
+    <p>User is Premium: {{premium}}</p>
     <!-- <h1>{{brand}} {{product}}</h1> -->
     <h1>{{title}}</h1>
     <p>{{onSaleMsg}}</p>
