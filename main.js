@@ -7,7 +7,7 @@ Vue.component('product', {
   </div>
 
   <div class="product-info">
-    <p>Shipping: {{shipping}}</p>
+
     <!-- <h1>{{brand}} {{product}}</h1> -->
     <h1>{{title}}</h1>
     <p>{{onSaleMsg}}</p>
@@ -21,7 +21,7 @@ Vue.component('product', {
     <ul>
       <li v-for="detail in details">{{detail}}</li>
     </ul>
-
+    <p>Shipping: {{shipping}}</p>
     <div v-for="(variant, index) in variants" :key="variant.variantId" class="color-box" :style="{
       backgroundColor: variant.variantColor
     }"
@@ -116,7 +116,9 @@ Vue.component('product', {
     },
     shipping() {
       if (this.premium) {
-        return 'Premium';
+        return 'Free';
+      } else {
+        return '$2.99';
       }
     },
   },
@@ -127,6 +129,6 @@ const app = new Vue({
   //el = element that is mounted on the element with id app
   el: '#app',
   data: {
-    premium: true,
+    premium: false,
   },
 });
