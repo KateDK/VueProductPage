@@ -7,7 +7,7 @@ Vue.component('product', {
   </div>
 
   <div class="product-info">
-    <p>User is Premium: {{premium}}</p>
+    <p>Shipping: {{shipping}}</p>
     <!-- <h1>{{brand}} {{product}}</h1> -->
     <h1>{{title}}</h1>
     <p>{{onSaleMsg}}</p>
@@ -112,6 +112,11 @@ Vue.component('product', {
     onSaleMsg() {
       if (this.onSale) {
         return `${this.brand} ${this.product} are on sale!`;
+      }
+    },
+    shipping() {
+      if (this.premium) {
+        return 'Premium';
       }
     },
   },
