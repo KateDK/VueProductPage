@@ -49,6 +49,12 @@ Vue.component('product', {
 
 </div>
   </div>`,
+  props: {
+    premium: {
+      type: Boolean,
+      required: true,
+    },
+  },
   data() {
     return {
       brand: 'Vue Mastery',
@@ -114,4 +120,7 @@ Vue.component('product', {
 const app = new Vue({
   //el = element that is mounted on the element with id app
   el: '#app',
+  data: {
+    premium: true,
+  },
 });
