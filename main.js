@@ -20,15 +20,13 @@ Vue.component('product', {
 
   <div class="product-info">
 
-    <!-- <h1>{{brand}} {{product}}</h1> -->
     <h1>{{title}}</h1>
     <p>{{onSaleMsg}}</p>
     <p>{{description}}</p>
 
     <p v-if="inStock">In Stock</p>
-    <!-- <p v-else-if="inventory < 10 && inventory > 0">Almost Sold Out!</p> -->
+
     <p v-else :class="{outOfStock: !inStock}">Out Of Stock</p>
-    <!-- <p v-show="onSale">On Sale!</p> -->
 
 <product-details :details="details"></product-details>
 
@@ -40,14 +38,6 @@ Vue.component('product', {
 
     </div>
 
-    <!-- <div>
-      <p>Sizes:</p>
-      <ul>
-        <li v-for="size in sizes">{{size}}</li>
-      </ul>
-    </div> -->
-
-    <!-- <a :href=link target="_blank">See more cool socks</a> -->
     <div>
       <button @click="addToCart" :disabled="!inStock" :class="{disabledButton: !inStock}">Add to Cart</button>
       <div class="cart">
@@ -73,7 +63,6 @@ Vue.component('product', {
       product: 'Socks',
       description:
         'These Fluffy socks will keep your toes snug and warm all winter long!',
-      // image: './vmSocks-green-onWhite.jpg',
       selectedVariant: 0,
       link: 'https://johnscrazysocks.com/collections/fun-and-funny-socks',
       altText: 'A pair of socks',
@@ -93,7 +82,6 @@ Vue.component('product', {
         },
       ],
       sizes: [32, 35, 37, 40, 45],
-      // inStock: true,
       onSale: true,
       cart: 0,
     };
@@ -106,7 +94,6 @@ Vue.component('product', {
       this.cart -= 1;
     },
     updateProduct(index) {
-      // this.image = variantImage;
       this.selectedVariant = index;
     },
   },
